@@ -30,6 +30,10 @@ Built with **Solidity**, **Ethereum**, and a focus on simplicity for beginner de
    Only the challenge creator can mark it as completed.
 
 ---
+🔗 Deploy Smart Contract
+Network:Celo Sepolia Testnet
+Verified Source : https://celo-sepolia.blockscout.com/address/0x7b0D9575Cfa6bc88249103c2c40Ee34B9B038d6F
+Contact Address : 0x7b0D9575Cfa6bc88249103c2c40Ee34B9B038d6F
 
 ## 🧩 Smart Contract
 
