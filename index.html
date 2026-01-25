@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Run - Endless Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="gameInfo">
+            <div id="scoreBoard">
+                <div class="info-item">
+                    <span class="label">Score:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Distance:</span>
+                    <span id="distance">0</span>m
+                </div>
+                <div class="info-item">
+                    <span class="label">Coins:</span>
+                    <span id="coins">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="startScreen" class="screen">
+            <h1>🏃 Temple Run</h1>
+            <p>Endless Runner Game</p>
+            <div class="instructions">
+                <h3>Controls:</h3>
+                <p>⬅️ Arrow Left - Move Left</p>
+                <p>➡️ Arrow Right - Move Right</p>
+                <p>⬆️ Arrow Up - Jump</p>
+                <p>⬇️ Arrow Down - Slide</p>
+                <p>Or use on-screen buttons on mobile</p>
+            </div>
+            <button id="startButton" class="btn">Start Game</button>
+        </div>
+        
+        <div id="gameOverScreen" class="screen hidden">
+            <h1>Game Over!</h1>
+            <div class="stats">
+                <p>Final Score: <span id="finalScore">0</span></p>
+                <p>Distance: <span id="finalDistance">0</span>m</p>
+                <p>Coins Collected: <span id="finalCoins">0</span></p>
+            </div>
+            <button id="restartButton" class="btn">Play Again</button>
+        </div>
+        
+        <div id="mobileControls">
+            <div class="control-row">
+                <button class="control-btn" data-action="jump">⬆️</button>
+            </div>
+            <div class="control-row">
+                <button class="control-btn" data-action="left">⬅️</button>
+                <button class="control-btn" data-action="slide">⬇️</button>
+                <button class="control-btn" data-action="right">➡️</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
